@@ -154,18 +154,18 @@ class Register extends React.Component {
                                     </div>
                                     <input type="password" id="password_check" name="password_check" className="flex-grow-1 border-0" placeholder="確認密碼" onChange={this.onInputChange} />
                                 </div>
-                                <div className="mb-3 text-center">
+                                {/* <div className="mb-3 text-center">
                                     <small>點擊加入會員即代表您已閱讀並同意GO CAMPING的
                                         <NavLink className="ground" target="_blank" to="/MemberServiceTerms">會員服務條款</NavLink>與
                                         <NavLink className="ground" target="_blank" to="/PrivacyPolicy">隱私權政策</NavLink>
                                     </small>
-                                </div>
+                                </div> */}
                                 <div className="row">
                                     <button type="submit" className="btn btn-grass col-12 fs-20 mb-3" href="/Member">加入會員</button>
                                 </div>
                                 <p className="text-center mb-3">
                                     已經有帳號了?&nbsp;
-                                    <Link className="ground register" to="/Member">馬上登入</Link>
+                                    <Link className="ground register" to="/login">馬上登入</Link>
                                 </p>
                             </form>
                         </div>
