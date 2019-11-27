@@ -9,7 +9,7 @@ const Footer = (props) =>{
         <footer className="mt-5">
             <div className="container maxWidth text-white">
                 <ul className="row list-unstyled paddingX">
-                    <li className="col-md-4 d-flex">
+                    {/* <li className="col-md-4 d-flex">
                         <h5>聯絡我們</h5>
                         <ul className="list-unstyled ml-5">
                             <li><i className="fas fa-phone"></i> <span>(02)1234-5678</span></li>
@@ -18,7 +18,7 @@ const Footer = (props) =>{
                             <li className="pointer"><i className="fab fa-line"></i> <span>LINE官方帳號</span></li>
                             <li className="pointer"><i className="fab fa-instagram"></i> <span>Instagram</span></li>
                         </ul>
-                    </li>
+                    </li> */}
                     <li className="col-md-4 d-flex">
                         <h5>網站地圖</h5>
                         <ul className="list-unstyled ml-5">

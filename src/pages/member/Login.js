@@ -149,9 +149,9 @@ class Login extends React.Component {
                                     <Link className="ground register" to="/Register">立即免費註冊</Link>
                                 </p>
                                 <hr />
-                                <div className="text-center" onClick={this.props.toggleHost}>
+                                {/* <div className="text-center" onClick={this.props.toggleHost}>
                                     <Link className="mb-0 camp_boss" to="/host">營地主登入</Link>
-                                </div>
+                                </div> */}
                             </form>
                         </div>
                     </div>
