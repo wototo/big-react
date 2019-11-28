@@ -21,7 +21,7 @@ class Register extends React.Component {
 
     async componentDidMount() {
         try {
-            const response = await fetch('http://localhost:5000/member', {
+            const response = await fetch('http://localhost:5000/login', {
                 method: 'GET',
                 headers: new Headers({
                     Accept: 'application/json',
@@ -167,7 +167,7 @@ class Register extends React.Component {
                                 </div>
                                 <div className="row mb-3">
                                 {this.state.alert}
-                                    <small>點擊加入會員即代表您已閱讀並同意GO CAMPING的
+                                    <small>點擊加入會員即代表您已閱讀並同意guitartist的
                                         <button type="button" className="ground" onClick={() => this.onTermClick()}>會員服務條款</button>與
                                         <span className="ground">隱私權政策</span>
                                     </small>
