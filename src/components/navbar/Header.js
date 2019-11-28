@@ -150,17 +150,17 @@ class Header extends React.Component {
                     <Nav.Link className="nav-link" href="/Member">會員中心</Nav.Link>
                 </p>
                 <NavDropdown title="&nbsp;&nbsp;訂單管理" id="basic-nav-dropdown" className="">
-                    <NavDropdown.Item href="/Member">營地訂單</NavDropdown.Item>
-                    <NavDropdown.Item href="/Member/MyRecruitOrder">食材訂單</NavDropdown.Item>
-                    <NavDropdown.Item href="/Member/MyEventOrder">活動訂單</NavDropdown.Item>
+                    <NavDropdown.Item href="/">吉他訂單</NavDropdown.Item>
+                    <NavDropdown.Item href="">課程訂單</NavDropdown.Item>
+                    <NavDropdown.Item href="">場地訂單</NavDropdown.Item>
                 </NavDropdown>
                 <div>
-                    <Nav.Link className="nav-link" href="/Member/MyCoupon">&nbsp;&nbsp;我的折價券</Nav.Link>
+                    <Nav.Link className="nav-link" href="">&nbsp;&nbsp;我的折價券</Nav.Link>
                 </div>
                 <div>
-                    <Nav.Link className="nav-link" href="/Member/MyFavorite">&nbsp;&nbsp;我的最愛</Nav.Link>
+                    <Nav.Link className="nav-link" href="">&nbsp;&nbsp;我的最愛</Nav.Link>
                 </div>
-                <NavDropdown title="&nbsp;&nbsp;文章管理" id="basic-nav-dropdown">
+                {/* <NavDropdown title="&nbsp;&nbsp;文章管理" id="basic-nav-dropdown">
                     <NavDropdown.Item href="/Member/MyPostEditor">新增文章</NavDropdown.Item>
                     <NavDropdown.Item href="/Member/MyPostList">文章列表</NavDropdown.Item>
                 </NavDropdown>
@@ -169,7 +169,7 @@ class Header extends React.Component {
                 </div>
                 <div className="border-bottom">
                     <Nav.Link className="nav-link" href="/Member/MyInfoEditor">&nbsp;&nbsp;編輯會員資料</Nav.Link>
-                </div>
+                </div> */}
                 <div>
                     <p className="m-0 fs-18">
                         <Nav.Link className="nav-link" href="/Logout">登出</Nav.Link>
@@ -211,16 +211,16 @@ class Header extends React.Component {
                                             <NavLink className="nav-link grass" to="/Buy" onClick={this.selectBuy}>購買吉他</NavLink>
                                         </li>
                                         <li className={"nav-item position-relative " + this.state.Course}>
-                                            <NavLink className="nav-link grass" to="/Course" onClick={this.selectCourse}>學習吉他</NavLink>
+                                            <NavLink className="nav-link grass" to="/" onClick={this.selectCourse}>學習吉他</NavLink>
                                         </li>
                                         <li className={"nav-item position-relative " + this.state.Site}>
-                                            <NavLink className="nav-link grass" to="/Site" onClick={this.selectSite}>場地租借</NavLink>
+                                            <NavLink className="nav-link grass" to="/" onClick={this.selectSite}>場地租借</NavLink>
                                         </li>
                                         <li className={"nav-item position-relative " + this.state.Recruit}>
-                                            <NavLink className="nav-link grass" to="/Recruit" onClick={this.selectRecruit}>人才招募</NavLink>
+                                            <NavLink className="nav-link grass" to="/" onClick={this.selectRecruit}>人才招募</NavLink>
                                         </li>
                                         <li className={"nav-item position-relative " + this.state.Forum}>
-                                            <NavLink className="nav-link grass" to="/Forum" onClick={this.selectForum}>討論區</NavLink>
+                                            <NavLink className="nav-link grass" to="/" onClick={this.selectForum}>討論區</NavLink>
                                         </li>
                                     </ul>
                                 </li>
@@ -254,16 +254,16 @@ class Header extends React.Component {
                                 <Nav.Link className="nav-link" href="/Buy" onClick={this.selectBuy}>購買吉他</Nav.Link>
                             </p>
                             <p className="m-0 border-bottom fs-18">
-                                <Nav.Link className="nav-link" href="/Course" onClick={this.selectCourse}>學習吉他</Nav.Link>
+                                <Nav.Link className="nav-link" href="/" onClick={this.selectCourse}>學習吉他</Nav.Link>
                             </p>
                             <p className="m-0 border-bottom fs-18">
-                                <Nav.Link className="nav-link" href="/Site" onClick={this.selectSite}>場地租借</Nav.Link>
+                                <Nav.Link className="nav-link" href="/" onClick={this.selectSite}>場地租借</Nav.Link>
                             </p>
                             <p className="m-0 border-bottom fs-18">
-                                <Nav.Link className="nav-link" href="/Recruit" onClick={this.selectRecruit}>人才招募</Nav.Link>
+                                <Nav.Link className="nav-link" href="/" onClick={this.selectRecruit}>人才招募</Nav.Link>
                             </p>
                             <p className="m-0 border-bottom fs-18">
-                                <Nav.Link className="nav-link" href="/Forum" onClick={this.selectForum}>討論區</Nav.Link>
+                                <Nav.Link className="nav-link" href="/" onClick={this.selectForum}>討論區</Nav.Link>
                             </p>
 
                             {this.state.logined ? (this.renderMemberRWD()) : (this.renderLoginRWD())}
