@@ -9,31 +9,31 @@ class IndexNew extends React.Component {
     constructor() {
         super();
         this.state = {
-            eventListDate: []
+            // eventListDate: []
         };
     }
     
-    componentDidMount() {
-        fetch('http://localhost:5000/indexFood', {
-            method: 'GET',
-            headers: new Headers({
-                Accept: 'application/json',
-                'Content-Type': 'application/json',
-            }),
-        })
-        .then(response => {
-            if (!response.ok) throw new Error(response.statusText)
-            return response.json()
-        })
-        .then(jsonObject => {
-            // console.log(typeof jsonObject)
-            // console.log(jsonObject)
-            this.setState({ eventListDate: jsonObject })
-        })
-        .catch(function (err) {
-            // Error :(
-        })
-    }
+    // componentDidMount() {
+    //     fetch('http://localhost:5000/indexFood', {
+    //         method: 'GET',
+    //         headers: new Headers({
+    //             Accept: 'application/json',
+    //             'Content-Type': 'application/json',
+    //         }),
+    //     })
+    //     .then(response => {
+    //         if (!response.ok) throw new Error(response.statusText)
+    //         return response.json()
+    //     })
+    //     .then(jsonObject => {
+    //         // console.log(typeof jsonObject)
+    //         // console.log(jsonObject)
+    //         this.setState({ eventListDate: jsonObject })
+    //     })
+    //     .catch(function (err) {
+    //         // Error :(
+    //     })
+    // }
 
     render() {
         let data = this.state.eventListDate;
