@@ -56,7 +56,7 @@ class IndexNew extends React.Component {
                 </div>
                 <div className="col-md-6">
                     <div className="index_imgBox indexCamp_box">
-                        <img className="index_img" src="/indexImg/adrury_20180702140954029.zip.0.jpg" alt=""/>
+                        <img className="index_img" src="/indexImg/pexels-photo-1071506.jpeg" alt=""/>
                     </div>
                 </div>
             </div>
@@ -65,7 +65,7 @@ class IndexNew extends React.Component {
         <div className="row marTop_100">
             <div className="col-md-5">
                 <div className="index_imgBox indexEvent_imgHeight">
-                    <img className="index_img" src="/indexImg/camping-bend-oregon-1600x900.jpg" alt=""/>
+                    <img className="index_img" src="/indexImg/music-lessons-435105_1920.jpg" alt=""/>
                 </div>
             </div>
             <div className="col-md-5">
@@ -97,7 +97,7 @@ class IndexNew extends React.Component {
             </div>
             <div className="col-md-5">
                 <div className="index_imgBox indexShare_imgHeight">
-                    <img className="index_img" src="/indexImg/photo-1529385101576-4e03aae38ffc.jpg" alt=""/>
+                    <img className="index_img" src="/indexImg/pexels-photo-1771305.jpeg" alt=""/>
                 </div>
             </div>
         </div>
